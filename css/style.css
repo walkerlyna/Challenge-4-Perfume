@@ -1,0 +1,173 @@
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --darkCyanact: hsl(158, 38%, 21%);
+    --cream: hsl(30, 38%, 92%);
+
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    --fuenteMontserrat: 'Fraunces', serif;
+    --fuenteFraunces: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.4rem;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--fuenteMontserrat);
+}
+
+/* Globales */
+
+img {
+    max-width: 100%;
+}
+
+/* contenedor */
+
+.contenedor {
+    width: 95%;
+    max-width: 50rem;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 1rem;
+}
+
+/* aside */
+.perfume {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+
+/* bside */
+.der {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.der h1 {
+    font-size: 1.1rem;
+    font-family: var(--fuenteFraunces);
+    color: var(--darkGrayishBlue);
+}
+
+.der h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.der p {
+    color: var(--darkGrayishBlue);
+    font-family: var(--fuenteFraunces);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.txt__infoprecio {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.txt__infoprecio h3 {
+    color: var(--darkCyan);
+    font-size: 2.7rem;
+}
+
+.txt__infoprecio h4 {
+    color: var(--darkGrayishBlue);
+    font-size: 1.2rem;
+    font-family: var(--fuenteFraunces);
+    font-weight: 500;
+}
+
+.boton {
+    position: relative;
+    border: none;
+    background-color: var(--darkCyan);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: var(--white);
+    font-family: var(--fuenteFraunces);
+    width: 100%;
+}
+
+.group {
+    position: relative;
+}
+
+.cartt {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+
+.boton:hover {
+    background-color: var(--darkCyanact);
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .contenedor {
+        max-width: 35rem;
+        display: grid;
+        grid-template-columns: none;
+    }
+
+    .perfume {
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+}
+
+/* footer */
+
+.footer {
+    margin-top: 5rem;
+    color: var(black);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: hotpink;
+  }
