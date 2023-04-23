@@ -109,7 +109,9 @@ img {
 }
 
 .boton {
-    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     border: none;
     background-color: var(--darkCyan);
     padding: 1.5rem;
@@ -119,15 +121,6 @@ img {
     width: 100%;
 }
 
-.group {
-    position: relative;
-}
-
-.cartt {
-    position: absolute;
-    left: 20px;
-    top: 5px;
-}
 
 .boton:hover {
     background-color: var(--darkCyanact);
